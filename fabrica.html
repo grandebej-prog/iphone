@@ -842,7 +842,7 @@
         document.addEventListener('DOMContentLoaded', () => {
             const contentSections = document.querySelectorAll('.content-section');
             const homeSection = document.getElementById('home-section');
-
+            
             function showHome() {
                 contentSections.forEach(section => {
                     section.classList.remove('active');
@@ -859,7 +859,7 @@
                     targetSection.classList.add('active');
                 }
             }
-
+            
             document.querySelectorAll('.menu-card').forEach(card => {
                 card.addEventListener('click', () => {
                     const sectionId = card.dataset.section;
