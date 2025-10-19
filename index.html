@@ -43,9 +43,10 @@
             font-size: 1rem;
         }
         
-        .status-bar, .intro-section {
+        .status-bar {
             display: none;
         }
+        
         .cau-button {
             background: #fed7aa;
             color: #ea580c;
@@ -306,6 +307,15 @@
             width: 100%;
         }
         
+        /* ESTILO CORRECTO DEL ICONO DEL MENÚ */
+        .menu-icon img {
+            max-width: 30px; 
+            max-height: 30px; 
+            width: auto;
+            height: auto;
+            object-fit: contain;
+        }
+        
         /* Media queries para el menú principal */
         @media (min-width: 1025px) {
             .main-menu {
@@ -396,7 +406,7 @@
                 </div>
                 <div class="menu-card" data-section="location">
                     <div class="menu-icon">
-                        <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/carretillaicono.jpg" alt="Una carretilla Reflex" style="width: 100%; height: auto; max-width: 30px;">
+                        <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/carretillaicono.jpg" alt="Icono de una carretilla Reflex">
                     </div>
                     <h3 class="menu-title">Problemas de ubicación</h3>
                     <p class="menu-description">Artículos nuevos y saltos</p>
@@ -469,7 +479,7 @@
                     Problemas de pantalla en blanco
                 </div>
 <div style="display: flex; gap: 20px; justify-content: flex-start; margin-top: 20px; margin-bottom: 20px;">
-    <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/nmistiablanco.jpg" alt="Descripción de la imagen aquí." style="width: 45%; max-width: 200px; height: auto;">
+    <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/nmistiablanco.jpg" alt="Escáner con la pantalla en blanco." style="width: 45%; max-width: 200px; height: auto;">
 </div>
                 <div class="solution-content">
                     <ol class="solution-steps">
@@ -501,7 +511,7 @@
                 </div>
 <div style="display: flex; gap: 20px; justify-content: flex-start; margin-top: 20px; margin-bottom: 20px;">
   <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/comunica.png" 
-       alt="Descripción de la imagen." 
+       alt="Pantalla de configuración Wi-Fi en una tablet." 
        style="width: 100%; max-width: 400px; height: auto;">
 </div>
                 <div class="solution-content">
@@ -548,7 +558,7 @@
                     Corte accidental de un contenedor
                 </div>
 <div style="display: flex; gap: 20px; justify-content: flex-start; margin-top: 20px; margin-bottom: 20px;">
-    <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/cortarprepa.png" alt="Descripción de la imagen aquí." style="width: 45%; max-width: 400px; height: auto;">
+    <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/cortarprepa.png" alt="Pantalla de aplicación de preparación mostrando opciones de corte." style="width: 45%; max-width: 400px; height: auto;">
 </div>
                 <div class="solution-content">
                     <ol class="solution-steps">
@@ -577,7 +587,7 @@
                     Salto accidental de la Zona de Tránsito (ZT)
                 </div>
 <div style="display: flex; gap: 20px; justify-content: flex-start; margin-top: 20px; margin-bottom: 20px;">
-    <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/prepaaraZT.png" alt="Descripción de la imagen aquí." style="width: 45%; max-width: 400px; height: auto;">
+    <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/prepaaraZT.png" alt="Pantalla de aplicación de preparación mostrando confirmación de ZT." style="width: 45%; max-width: 400px; height: auto;">
 </div>
                 <div class="solution-content">
                     <ol class="solution-steps">
@@ -614,7 +624,7 @@
         <div id="location-section" class="content-section" data-section-id="location">
             <button class="back-button">← Volver al Inicio</button>
             <h2 class="section-title">
-                <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/carretillaicono.jpg" alt="Carretilla">
+                <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/carretillaicono.jpg" alt="Icono de carretilla">
                 Problemas de ubicación
             </h2>
             
@@ -624,7 +634,7 @@
                     Artículo nuevo sin ubicación asignada
                 </div>
 <div style="display: flex; gap: 20px; justify-content: flex-start; margin-top: 20px; margin-bottom: 20px;">
-    <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/sinubica.png" alt="Descripción de la imagen aquí." style="width: 45%; max-width: 400px; height: auto;">
+    <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/sinubica.png" alt="Mensaje de sistema sobre artículo sin ubicación." style="width: 45%; max-width: 400px; height: auto;">
 </div>
                 <div class="solution-content">
                     <ol class="solution-steps">
@@ -632,10 +642,10 @@
                             <p class="step-text">El sistema indica que es un artículo nuevo sin ubicación.</p>
                         </li>
                         <li class="solution-step">
-                            <p class="step-text">Contacte inmediatamente con la OCA , para que le asigne una ubicación.</p>
+                            <p class="step-text">Contacte inmediatamente con la **OCA**, para que le asigne una ubicación.</p>
                         </li>
                         <li class="solution-step">
-                            <p class="step-text">Continúe ubicando , hasta que un organizador o la OCA le confirme que el tornillo ya tiene un hueco asignado,  para poder ubicarlo en altura.</p>
+                            <p class="step-text">Continúe ubicando, hasta que un organizador o la **OCA** le confirme que el tornillo ya tiene un hueco asignado, para poder ubicarlo en altura.</p>
                         </li>
                     </ol>
                 </div>
@@ -647,7 +657,7 @@
                     Salto accidental de la Zona de Tránsito (ZT)
                 </div>
 <div style="display: flex; gap: 20px; justify-content: flex-start; margin-top: 20px; margin-bottom: 20px;">
-    <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/ubiZT.png" alt="Descripción de la imagen aquí." style="width: 45%; max-width: 400px; height: auto;">
+    <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/ubiZT.png" alt="Pantalla de aplicación de ubicación en ZT." style="width: 45%; max-width: 400px; height: auto;">
 </div>
                 <div class="solution-content">
                     <ol class="solution-steps">
@@ -666,12 +676,34 @@
                     </ol>
                     <div class="warning">
                         <span class="warning-icon">⚠️</span>
-                        <div class="warning-text">No continúe sin restablecer este paso. Asegúrese que se le ha imprimido la pegatina al contenedor, además de generarles  problemas a los compañeros de expedición ,  al confirmarle un palé en un muelle y no dejárselo en la ZT, ya que no se puede salir a una zona que no es transitable para las Réflex ,  para no poner en riesgos al personal que está en expedición o a los camioneros.</div>
+                        <div class="warning-text">No continúe sin restablecer este paso. Asegúrese que se le ha imprimido la pegatina al contenedor, además de generarles problemas a los compañeros de expedición, al confirmarle un palé en un muelle y no dejárselo en la ZT, ya que no se puede salir a una zona que no es transitable para las Réflex, para no poner en riesgos al personal que está en expedición o a los camioneros.</div>
                     </div>
                 </div>
             </div>
+            
+            <div class="solution-card">
+                <div class="solution-header">
+                    <span class="solution-header-icon">🆕</span>
+                    Mensaje de aviso en la Trilateral
+                </div>
+                <div class="solution-content">
+                    
+                        <div style="display: flex; gap: 20px; justify-content: flex-start; margin-top: 20px; margin-bottom: 20px;">
+                        <img src="https://raw.githubusercontent.com/grandebej-prog/iphone/refs/heads/actualizacion/trila.png" alt="Mensaje de aviso en carretilla Trilateral." style="width: 45%; max-width: 400px; height: auto;">
+                    </div>
+                    <ol class="solution-steps">
+                        <li class="solution-step">
+                            <p class="step-text">Este mensaje aparece para avisar de que no pueden ir dos o más trilaterales (o trilas) al mismo pasillo.</p>
+                        </li>
+                    </ol>
+                    <div class="warning">
+                        <span class="warning-icon">⚠️</span>
+                        <div class="warning-text">Para evitar el aviso de "pasillo saturado", la trilateral que esté en el pasillo debe terminar la orden, volver al menú principal y pedir una nueva tarea. Así se liberará el pasillo y la trilateral que tuvo el aviso por saturación podrá hacer la reposición y no dar faltas por pasillo estrecho.</div>
+                    </div>
+                </div>
+            </div> 
         </div>
-        
+
         <div id="tablet-section" class="content-section" data-section-id="tablet">
             <button class="back-button">← Volver al Inicio</button>
             <h2 class="section-title">🖥️ Problemas con la Tablet y carretilla</h2>
@@ -683,7 +715,7 @@
                 </div>
 <div style="display: flex; gap: 20px; justify-content: flex-start; margin-top: 20px; margin-bottom: 20px;">
   <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/tableterror.png" 
-       alt="Tabla de información relevante." 
+       alt="Pantalla de gestión de dispositivos en la tablet." 
        style="width: 100%; max-width: 400px; height: auto;">
 </div>
                 <div class="solution-content">
@@ -741,7 +773,7 @@
                 </div>
 <div style="display: flex; gap: 20px; justify-content: flex-start; margin-top: 20px; margin-bottom: 20px;">
   <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/impresoramal.jpg" 
-       alt="Una impresora que no funciona." 
+       alt="Una impresora térmica de etiquetas que no funciona." 
        style="width: 70%; max-width: 400px; height: auto;">
 </div>
                 <div class="solution-content">
@@ -750,7 +782,7 @@
                             <p class="step-text">Abra la aplicación <strong>MGA</strong> en el ordenador.</p>
                         </li>
                         <li class="solution-step">
-                            <p class="step-text">Selecionamos mantenimiento.</p>
+                            <p class="step-text">Seleccionamos mantenimiento.</p>
                         </li>
                         <li class="solution-step">
                             <p class="step-text">Maestros.</p>
@@ -768,7 +800,7 @@
                             <p class="step-text">Elija la opción de Impresora de Etiquetados de Contenedor.</p>
                         </li>
                         <li class="solution-step">
-                            <p class="step-text">Busque y seleccione la impresora correcta que es <strong>0914COEXPO60IT</strong>.</p>
+                            <p class="step-text">Busque y seleccione la impresora correcta que es **0914COEXPO60IT**.</p>
                         </li>
                         <li class="solution-step">
                             <p class="step-text">Guarde los cambios.</p>
@@ -796,28 +828,35 @@
                     <div class="cau-images-grid">
                         <div class="cau-image-item">
                             <div class="cau-image-wrapper">
-                                <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/cauimpresora.jpg" alt="Imagen de un problema en una impresora.">
+                                <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/cauimpresora.jpg" alt="Fallo de calibración de impresora térmica." style="object-fit: cover;">
                             </div>
                             <p class="cau-image-caption">Fallos de calibración de impresora.</p>
                         </div>
                         
                         <div class="cau-image-item">
                             <div class="cau-image-wrapper">
-                                <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/sincrocau.jpg" alt="Sincronización de impresora.">
+                                <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/sincrocau.jpg" alt="Error de sincronización de sistema o servidor." style="object-fit: cover;">
                             </div>
                             <p class="cau-image-caption">Errores de sincronización del sistema. Fallo en el almacenamiento de los servidores propios del Almacén.</p>
                         </div>
                         
                         <div class="cau-image-item">
                             <div class="cau-image-wrapper">
-                                <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/cauG04.jpg" alt="Una pantalla de login de un software.">
+                                <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/cauG04.jpg" alt="Pantalla de inicio de sesión de un software de gestión." style="object-fit: cover;">
                             </div>
                             <p class="cau-image-caption">Errores críticos del sistema. Cualquier error que impida el funcionamiento normal.</p>
                         </div>
                         
+                         <div class="cau-image-item">
+                            <div class="cau-image-wrapper">
+                                <img src="https://raw.githubusercontent.com/grandebej-prog/iphone/refs/heads/main/preparador.png" alt="Pantalla de inicio de sesión de un software de gestión." style="object-fit: cover;">
+                            </div>
+                            <p class="cau-image-caption">Errores de acceso al preparador porque un prepador tiene asignado mas de un nombre de usuario en el sistema.</p>
+                        </div>
+
                         <div class="cau-image-item">
                             <div class="cau-image-wrapper">
-                                <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/cau%20app.png" alt="Una app de control para vehículos.">
+                                <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/cau%20app.png" alt="Aplicación de control para vehículos en una tablet." style="object-fit: cover;">
                             </div>
                             <p class="cau-image-caption">Errores de funcionamiento de las App.</p>
                         </div>
@@ -835,14 +874,18 @@
     <footer>
         <div class="version-info">
             <p>Elaborado por: Equipo Fabricar frobledo</p>
-            <p>Versión: 1.1 | Fecha: Septiembre 2025</p>
+            <p>Versión: 1.2 | Fecha: Octubre 2025</p>
         </div>
     </footer>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            // CONFIRMACIÓN: Se ejecuta este script al cargar la página
+            console.log('Script de navegación cargado correctamente.');
+            
             const contentSections = document.querySelectorAll('.content-section');
             const homeSection = document.getElementById('home-section');
             
+            // Función para mostrar solo la sección de inicio
             function showHome() {
                 contentSections.forEach(section => {
                     section.classList.remove('active');
@@ -850,6 +893,7 @@
                 homeSection.classList.add('active');
             }
             
+            // Función para mostrar la sección seleccionada
             function showSection(sectionId) {
                 contentSections.forEach(section => {
                     section.classList.remove('active');
@@ -857,9 +901,12 @@
                 const targetSection = document.getElementById(`${sectionId}-section`);
                 if (targetSection) {
                     targetSection.classList.add('active');
+                } else {
+                    console.error(`ERROR: No se encontró la sección con ID: ${sectionId}-section`);
                 }
             }
             
+            // Asigna la función showSection a los botones del menú principal
             document.querySelectorAll('.menu-card').forEach(card => {
                 card.addEventListener('click', () => {
                     const sectionId = card.dataset.section;
@@ -869,10 +916,12 @@
                 });
             });
             
+            // Asigna la función showHome a los botones de "Volver al Inicio"
             document.querySelectorAll('.back-button').forEach(button => {
                 button.addEventListener('click', showHome);
             });
             
+            // Inicializa la vista mostrando la sección de inicio
             showHome();
         });
     </script>
