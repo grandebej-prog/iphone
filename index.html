@@ -43,9 +43,10 @@
             font-size: 1rem;
         }
         
-        .status-bar, .intro-section {
+        .status-bar {
             display: none;
         }
+        
         .cau-button {
             background: #fed7aa;
             color: #ea580c;
@@ -280,7 +281,7 @@
         /* CAU Section - Responsive Image Grid */
         .cau-images-grid {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(3, 1fr); /* <-- CAMBIO A 3 COLUMNAS */
             gap: 20px;
             margin: 20px 0;
         }
@@ -306,6 +307,39 @@
             width: 100%;
         }
         
+        /* ESTILO CORRECTO DEL ICONO DEL MENÚ */
+        .menu-icon img {
+            max-width: 30px; 
+            max-height: 30px; 
+            width: auto;
+            height: auto;
+            object-fit: contain;
+        }
+        
+        /* Alineación de imágenes en soluciones */
+        .solution-images {
+            display: flex;
+            gap: 20px;
+            justify-content: flex-start;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .solution-images img {
+            width: 45%;
+            max-width: 200px;
+            height: auto;
+        }
+        
+        .solution-images.full-width {
+            width: 100%;
+        }
+        
+        .solution-images.full-width img {
+            width: 100%;
+            max-width: 400px;
+        }
+        
         /* Media queries para el menú principal */
         @media (min-width: 1025px) {
             .main-menu {
@@ -318,7 +352,7 @@
                 grid-template-columns: repeat(3, 1fr);
             }
             .cau-images-grid {
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: repeat(3, 1fr); /* <-- MANTENIDO A 3 COLUMNAS EN TABLETS */
                 gap: 16px;
             }
         }
@@ -390,13 +424,15 @@
                     <p class="menu-description">Soluciones Wi-Fi</p>
                 </div>
                 <div class="menu-card" data-section="preparation">
-                    <div class="menu-icon">📦</div>
+                    <div class="menu-icon">
+                     <img src="https://raw.githubusercontent.com/grandebej-prog/iphone/refs/heads/main/yaleverdura.jpg" alt="Icono de carretilla Yale de verdura" class="yale-verdura-icon">
+                     </div>
                     <h3 class="menu-title">Errores en preparación</h3>
                     <p class="menu-description">Cortes y saltos ZT</p>
                 </div>
                 <div class="menu-card" data-section="location">
                     <div class="menu-icon">
-                        <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/carretillaicono.jpg" alt="Una carretilla Reflex" style="width: 100%; height: auto; max-width: 30px;">
+                        <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/carretillaicono.jpg" alt="Icono de una carretilla Reflex">
                     </div>
                     <h3 class="menu-title">Problemas de ubicación</h3>
                     <p class="menu-description">Artículos nuevos y saltos</p>
@@ -425,13 +461,13 @@
             
             <div class="solution-card">
                 <div class="solution-header">
-                    <span class="solution-header-icon">🔄</span>
+                    <span class="solution-header-icon">📄</span>
                     Problemas de sincronización
                 </div>
-<div style="display: flex; gap: 20px; justify-content: flex-start; margin-top: 20px; margin-bottom: 20px;">
-    <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/escaner1111.png" alt="Dispositivo de escáner mostrando una pantalla en blanco." style="width: 45%; max-width: 200px; height: auto;">
-    <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/escaner222.PNG" alt="Dispositivo de escáner mostrando un mensaje de error 'Connected without NIMMSTA App'." style="width: 45%; max-width: 200px; height: auto;">
-</div>
+                <div class="solution-images">
+                    <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/escaner1111.png" alt="Dispositivo de escáner mostrando una pantalla en blanco.">
+                    <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/escaner222.PNG" alt="Dispositivo de escáner mostrando un mensaje de error 'Connected without NIMMSTA App'.">
+                </div>
                 <div class="solution-content">
                     <ol class="solution-steps">
                         <li class="solution-step">
@@ -450,7 +486,7 @@
                             <p class="step-text">Desactive Bluetooth.</p>
                         </li>
                         <li class="solution-step">
-                            <p class="step-text">Vuélvalo a activar.</p>
+                            <p class="step-text">Vuelva a activar.</p>
                         </li>
                         <li class="solution-step">
                             <p class="step-text">Intente conectar nuevamente el escáner.</p>
@@ -468,9 +504,9 @@
                     <span class="solution-header-icon">⬜</span>
                     Problemas de pantalla en blanco
                 </div>
-<div style="display: flex; gap: 20px; justify-content: flex-start; margin-top: 20px; margin-bottom: 20px;">
-    <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/nmistiablanco.jpg" alt="Descripción de la imagen aquí." style="width: 45%; max-width: 200px; height: auto;">
-</div>
+                <div class="solution-images">
+                    <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/nmistiablanco.jpg" alt="Escáner con la pantalla en blanco.">
+                </div>
                 <div class="solution-content">
                     <ol class="solution-steps">
                         <li class="solution-step">
@@ -483,7 +519,7 @@
                             <p class="step-text">Elija el suministro en el que se está preparando.</p>
                         </li>
                         <li class="solution-step">
-                            <p class="step-text"> Podrá comprobar que aparece toda la información en el escáner.</p>
+                            <p class="step-text">Podrá comprobar que aparece toda la información en el escáner.</p>
                         </li>
                     </ol>
                 </div>
@@ -499,11 +535,9 @@
                     <span class="solution-header-icon">🌐</span>
                     Problemas de conexión Wi-Fi
                 </div>
-<div style="display: flex; gap: 20px; justify-content: flex-start; margin-top: 20px; margin-bottom: 20px;">
-  <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/comunica.png" 
-       alt="Descripción de la imagen." 
-       style="width: 100%; max-width: 400px; height: auto;">
-</div>
+                <div class="solution-images full-width">
+                    <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/comunica.png" alt="Pantalla de configuración Wi-Fi en una tablet.">
+                </div>
                 <div class="solution-content">
                     <ol class="solution-steps">
                         <li class="solution-step">
@@ -516,16 +550,16 @@
                             <p class="step-text">Acceda a <strong>Redes & Internet</strong>.</p>
                         </li>
                         <li class="solution-step">
-                            <p class="step-text">Verifique si está conectado a una red equivocada (ej. PROVCERT).</p>
+                            <p class="step-text">Verifique si está conectado a una red equivocada (ej. PROVCERT o MERCA_WIFI).</p>
                         </li>
                         <li class="solution-step">
                             <p class="step-text">Desactive temporalmente el Wi-Fi y espere unos minutos.</p>
                         </li>
                         <li class="solution-step">
-                            <p class="step-text">Vuélvalo a activar y se debería de conectar a la RED WLAND_DP.</p>
+                            <p class="step-text">Vuelva a activar y se debería de conectar a la RED WLAND_DP.</p>
                         </li>
                         <li class="solution-step">
-                            <p class="step-text">Si el dispositivo vuelve a conectarse a PROVCERT, active el <strong>modo avión</strong> durante 1 minuto.</p>
+                            <p class="step-text">Si el dispositivo vuelve a conectarse a PROVCERTo MERCA_WIFI, active el <strong>modo avión</strong> durante 1 minuto.</p>
                         </li>
                         <li class="solution-step">
                             <p class="step-text">Desactívelo y se conectaría a la red deseada.</p>
@@ -540,16 +574,19 @@
         
         <div id="preparation-section" class="content-section" data-section-id="preparation">
             <button class="back-button">← Volver al Inicio</button>
-            <h2 class="section-title">📦 Errores en la preparación</h2>
-            
+            <h2 class="section-title">
+             <img src="https://raw.githubusercontent.com/grandebej-prog/iphone/refs/heads/main/yaleverdura.jpg" alt="Icono de carretilla Yale de verdura" class="yale-verdura-icon">
+              Errores en la preparación
+             </h2>
+             
             <div class="solution-card">
                 <div class="solution-header">
                     <span class="solution-header-icon">✂️</span>
                     Corte accidental de un contenedor
                 </div>
-<div style="display: flex; gap: 20px; justify-content: flex-start; margin-top: 20px; margin-bottom: 20px;">
-    <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/cortarprepa.png" alt="Descripción de la imagen aquí." style="width: 45%; max-width: 400px; height: auto;">
-</div>
+                <div class="solution-images full-width">
+                    <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/cortarprepa.png" alt="Pantalla de aplicación de preparación mostrando opciones de corte.">
+                </div>
                 <div class="solution-content">
                     <ol class="solution-steps">
                         <li class="solution-step">
@@ -576,9 +613,9 @@
                     <span class="solution-header-icon">🚛</span>
                     Salto accidental de la Zona de Tránsito (ZT)
                 </div>
-<div style="display: flex; gap: 20px; justify-content: flex-start; margin-top: 20px; margin-bottom: 20px;">
-    <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/prepaaraZT.png" alt="Descripción de la imagen aquí." style="width: 45%; max-width: 400px; height: auto;">
-</div>
+                <div class="solution-images full-width">
+                    <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/prepaaraZT.png" alt="Pantalla de aplicación de preparación mostrando confirmación de ZT.">
+                </div>
                 <div class="solution-content">
                     <ol class="solution-steps">
                         <li class="solution-step">
@@ -614,7 +651,7 @@
         <div id="location-section" class="content-section" data-section-id="location">
             <button class="back-button">← Volver al Inicio</button>
             <h2 class="section-title">
-                <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/carretillaicono.jpg" alt="Carretilla">
+                <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/carretillaicono.jpg" alt="Icono de carretilla">
                 Problemas de ubicación
             </h2>
             
@@ -623,19 +660,19 @@
                     <span class="solution-header-icon">🆕</span>
                     Artículo nuevo sin ubicación asignada
                 </div>
-<div style="display: flex; gap: 20px; justify-content: flex-start; margin-top: 20px; margin-bottom: 20px;">
-    <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/sinubica.png" alt="Descripción de la imagen aquí." style="width: 45%; max-width: 400px; height: auto;">
-</div>
+                <div class="solution-images full-width">
+                    <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/sinubica.png" alt="Mensaje de sistema sobre artículo sin ubicación.">
+                </div>
                 <div class="solution-content">
                     <ol class="solution-steps">
                         <li class="solution-step">
                             <p class="step-text">El sistema indica que es un artículo nuevo sin ubicación.</p>
                         </li>
                         <li class="solution-step">
-                            <p class="step-text">Contacte inmediatamente con la OCA , para que le asigne una ubicación.</p>
+                            <p class="step-text">Contacte inmediatamente con la OCA, para que le asigne una ubicación.</p>
                         </li>
                         <li class="solution-step">
-                            <p class="step-text">Continúe ubicando , hasta que un organizador o la OCA le confirme que el tornillo ya tiene un hueco asignado,  para poder ubicarlo en altura.</p>
+                            <p class="step-text">Continúe ubicando, hasta que un organizador o la OCA le confirme que el tornillo ya tiene un hueco asignado, para poder ubicarlo en altura.</p>
                         </li>
                     </ol>
                 </div>
@@ -646,9 +683,9 @@
                     <span class="solution-header-icon">🚛</span>
                     Salto accidental de la Zona de Tránsito (ZT)
                 </div>
-<div style="display: flex; gap: 20px; justify-content: flex-start; margin-top: 20px; margin-bottom: 20px;">
-    <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/ubiZT.png" alt="Descripción de la imagen aquí." style="width: 45%; max-width: 400px; height: auto;">
-</div>
+                <div class="solution-images full-width">
+                    <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/ubiZT.png" alt="Pantalla de aplicación de ubicación en ZT.">
+                </div>
                 <div class="solution-content">
                     <ol class="solution-steps">
                         <li class="solution-step">
@@ -666,12 +703,76 @@
                     </ol>
                     <div class="warning">
                         <span class="warning-icon">⚠️</span>
-                        <div class="warning-text">No continúe sin restablecer este paso. Asegúrese que se le ha imprimido la pegatina al contenedor, además de generarles  problemas a los compañeros de expedición ,  al confirmarle un palé en un muelle y no dejárselo en la ZT, ya que no se puede salir a una zona que no es transitable para las Réflex ,  para no poner en riesgos al personal que está en expedición o a los camioneros.</div>
+                        <div class="warning-text">No continúe sin restablecer este paso. Asegúrese que se le ha imprimido la pegatina al contenedor, además de generarles problemas a los compañeros de expedición, al confirmarle un palé en un muelle y no dejárselo en la ZT, ya que no se puede salir a una zona que no es transitable para las Réflex, para no poner en riesgos al personal que está en expedición o a los camioneros.</div>
                     </div>
                 </div>
             </div>
+            
+            <div class="solution-card">
+                <div class="solution-header">
+                    <span class="solution-header-icon">🆕</span>
+                    Mensaje de aviso en la Trilateral
+                </div>
+                <div class="solution-images full-width">
+                    <img src="https://raw.githubusercontent.com/grandebej-prog/iphone/refs/heads/actualizacion/trila.png" alt="Mensaje de aviso en carretilla Trilateral.">
+                </div>
+                <div class="solution-content">
+                    <ol class="solution-steps">
+                        <li class="solution-step">
+                            <p class="step-text">Este mensaje aparece para avisar de que no pueden ir dos o más trilaterales (o trilas) al mismo pasillo.</p>
+                        </li>
+                    </ol>
+                    <div class="warning">
+                        <span class="warning-icon">⚠️</span>
+                        <div class="warning-text">Para evitar el aviso de "pasillo saturado", la trilateral a la que le aparezca esta notificación debe salir al menú principal y solicitar una nueva asignación automática. Esto se debe a que la otra trilateral ya está operando en ese pasillo, y no está permitido que dos máquinas ingresen al mismo carril. </div>
+                    </div>
+                </div>
+
+                
+                   
+
+                <div class="solution-card">
+                    <div class="solution-header">
+                        <span class="solution-header-icon">📊</span>
+                        Recálculo de Contadores del Almacén (Desde MGA)Evitar que se acumulen reposiciones en pasillo y no dar faltas de servicio
+                    </div>
+
+                   <div class="solution-images full-width">
+                    <img src="https://raw.githubusercontent.com/grandebej-prog/iphone/refs/heads/main/reposicion.png" alt="Recalculo de contenedores.">
+                </div>
+
+                    <div class="solution-content">
+                        <p style="margin-bottom: 16px;">Pasos para forzar el recálculo de los contadores del almacén, útil tras incidencias de ubicación :</p>
+                        <ol class="solution-steps">
+                            <li class="solution-step">
+                                <p class="step-text"><strong>Paso 1:</strong> Abrir el **MGA**.</p>
+                            </li>
+                            <li class="solution-step">
+                                <p class="step-text"><strong>Paso 2:</strong> Seleccionar **Control**.</p>
+                            </li>
+                            <li class="solution-step">
+                                <p class="step-text"><strong>Paso 3:</strong> Seleccionar **Resolución de incidencias**.</p>
+                            </li>
+                            <li class="solution-step">
+                                <p class="step-text"><strong>Paso 4:</strong> Seleccionar **Menu de transitos y contenedores**.</p>
+                            </li>
+                            <li class="solution-step">
+                                <p class="step-text"><strong>Paso 5:</strong> Seleccionar **Recalcular contadores del almacen**.</p>
+                            </li>
+                            <li class="solution-step">
+                                <p class="step-text"><strong>Paso 6:</strong> Ir a la pestaña de **pantalla** para ver la información.</p>
+                            </li>
+                        </ol>
+                        <div class="success">
+                            <span class="success-icon">✅</span>
+                            <div class="success-text">Este proceso reajusta los datos de ubicación en el sistema y hara que se puedan acceder a los pasillos con resposiciones y faltas de pasillo estrecho que antes no lo permitia.</div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div> 
         </div>
-        
+
         <div id="tablet-section" class="content-section" data-section-id="tablet">
             <button class="back-button">← Volver al Inicio</button>
             <h2 class="section-title">🖥️ Problemas con la Tablet y carretilla</h2>
@@ -681,11 +782,9 @@
                     <span class="solution-header-icon">🔧</span>
                     Solución para la configuración del dispositivo
                 </div>
-<div style="display: flex; gap: 20px; justify-content: flex-start; margin-top: 20px; margin-bottom: 20px;">
-  <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/tableterror.png" 
-       alt="Tabla de información relevante." 
-       style="width: 100%; max-width: 400px; height: auto;">
-</div>
+                <div class="solution-images full-width">
+                    <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/tableterror.png" alt="Pantalla de gestión de dispositivos en la tablet.">
+                </div>
                 <div class="solution-content">
                     <ol class="solution-steps">
                         <li class="solution-step">
@@ -719,7 +818,7 @@
                             <p class="step-text">Volvemos a confirmar el número de la carretilla que tiene físicamente y le damos a aceptar.</p>
                         </li>
                         <li class="solution-step">
-                            <p class="step-text">El sistema nos dirá que el número de la  carretilla que queremos sustituir no está en uso en ninguna carretilla; le damos a confirmar y solucionamos el error.</p>
+                            <p class="step-text">El sistema nos dirá que el número de la carretilla que queremos sustituir no está en uso en ninguna carretilla; le damos a confirmar y solucionamos el error.</p>
                         </li>
                     </ol>
                     <div class="warning">
@@ -739,24 +838,22 @@
                     <span class="solution-header-icon">⚙️</span>
                     Configuración de la Impresora
                 </div>
-<div style="display: flex; gap: 20px; justify-content: flex-start; margin-top: 20px; margin-bottom: 20px;">
-  <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/impresoramal.jpg" 
-       alt="Una impresora que no funciona." 
-       style="width: 70%; max-width: 400px; height: auto;">
-</div>
+                <div class="solution-images full-width">
+                    <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/impresoramal.jpg" alt="Una impresora térmica de etiquetas que no funciona.">
+                </div>
                 <div class="solution-content">
                     <ol class="solution-steps">
                         <li class="solution-step">
                             <p class="step-text">Abra la aplicación <strong>MGA</strong> en el ordenador.</p>
                         </li>
                         <li class="solution-step">
-                            <p class="step-text">Selecionamos mantenimiento.</p>
+                            <p class="step-text">Seleccionar  **mantenimiento**.</p>
                         </li>
                         <li class="solution-step">
-                            <p class="step-text">Maestros.</p>
+                            <p class="step-text"> Seleccionar **Maestros**.</p>
                         </li>
                         <li class="solution-step">
-                            <p class="step-text">Terminales.</p>
+                            <p class="step-text"> Seleccionar **Terminales**.</p>
                         </li>
                         <li class="solution-step">
                             <p class="step-text">Ingrese el número <strong>125</strong> (Tablet del rolldocking).</p>
@@ -765,13 +862,13 @@
                             <p class="step-text">Pulse el icono del <strong>lápiz</strong> (editar).</p>
                         </li>
                         <li class="solution-step">
-                            <p class="step-text">Elija la opción de Impresora de Etiquetados de Contenedor.</p>
+                            <p class="step-text">Seleccionar **Impresora de Etiquetados de Contenedor**.</p>
                         </li>
                         <li class="solution-step">
-                            <p class="step-text">Busque y seleccione la impresora correcta que es <strong>0914COEXPO60IT</strong>.</p>
+                            <p class="step-text">Busque y seleccione la impresora correcta que es **0914COEXPO60IT**.</p>
                         </li>
                         <li class="solution-step">
-                            <p class="step-text">Guarde los cambios.</p>
+                            <p class="step-text"> Seleccionar **Guarde los cambios**.</p>
                         </li>
                     </ol>
                     <div class="success">
@@ -796,28 +893,35 @@
                     <div class="cau-images-grid">
                         <div class="cau-image-item">
                             <div class="cau-image-wrapper">
-                                <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/cauimpresora.jpg" alt="Imagen de un problema en una impresora.">
+                                <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/cauimpresora.jpg" alt="Fallo de calibración de impresora térmica." style="object-fit: cover;">
                             </div>
                             <p class="cau-image-caption">Fallos de calibración de impresora.</p>
                         </div>
                         
                         <div class="cau-image-item">
                             <div class="cau-image-wrapper">
-                                <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/sincrocau.jpg" alt="Sincronización de impresora.">
+                                <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/sincrocau.jpg" alt="Error de sincronización de sistema o servidor." style="object-fit: cover;">
                             </div>
                             <p class="cau-image-caption">Errores de sincronización del sistema. Fallo en el almacenamiento de los servidores propios del Almacén.</p>
                         </div>
                         
                         <div class="cau-image-item">
                             <div class="cau-image-wrapper">
-                                <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/cauG04.jpg" alt="Una pantalla de login de un software.">
+                                <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/cauG04.jpg" alt="Pantalla de inicio de sesión de un software de gestión." style="object-fit: cover;">
                             </div>
                             <p class="cau-image-caption">Errores críticos del sistema. Cualquier error que impida el funcionamiento normal.</p>
                         </div>
                         
+                         <div class="cau-image-item">
+                            <div class="cau-image-wrapper">
+                                <img src="https://raw.githubusercontent.com/grandebej-prog/iphone/refs/heads/main/preparador.png" alt="Pantalla de inicio de sesión de un software de gestión." style="object-fit: cover;">
+                            </div>
+                            <p class="cau-image-caption">Errores de acceso al preparador porque un prepador tiene asignado mas de un nombre de usuario en el sistema.</p>
+                        </div>
+
                         <div class="cau-image-item">
                             <div class="cau-image-wrapper">
-                                <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/cau%20app.png" alt="Una app de control para vehículos.">
+                                <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/cau%20app.png" alt="Aplicación de control para vehículos en una tablet." style="object-fit: cover;">
                             </div>
                             <p class="cau-image-caption">Errores de funcionamiento de las App.</p>
                         </div>
@@ -835,11 +939,13 @@
     <footer>
         <div class="version-info">
             <p>Elaborado por: Equipo Fabricar frobledo</p>
-            <p>Versión: 1.1 | Fecha: Septiembre 2025</p>
+            <p>Versión: 1.2 | Fecha: Octubre 2025</p>
         </div>
     </footer>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            console.log('Script de navegación cargado correctamente.');
+            
             const contentSections = document.querySelectorAll('.content-section');
             const homeSection = document.getElementById('home-section');
             
@@ -857,6 +963,8 @@
                 const targetSection = document.getElementById(`${sectionId}-section`);
                 if (targetSection) {
                     targetSection.classList.add('active');
+                } else {
+                    console.error(`ERROR: No se encontró la sección con ID: ${sectionId}-section`);
                 }
             }
             
