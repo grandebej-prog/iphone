@@ -281,7 +281,7 @@
         /* CAU Section - Responsive Image Grid */
         .cau-images-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr); /* <-- CAMBIO A 3 COLUMNAS */
+            grid-template-columns: repeat(3, 1fr); 
             gap: 20px;
             margin: 20px 0;
         }
@@ -352,7 +352,7 @@
                 grid-template-columns: repeat(3, 1fr);
             }
             .cau-images-grid {
-                grid-template-columns: repeat(3, 1fr); /* <-- MANTENIDO A 3 COLUMNAS EN TABLETS */
+                grid-template-columns: repeat(3, 1fr); 
                 gap: 16px;
             }
         }
@@ -727,53 +727,58 @@
                         <div class="warning-text">Para evitar el aviso de "pasillo saturado", la trilateral a la que le aparezca esta notificación debe salir al menú principal y solicitar una nueva asignación automática. Esto se debe a que la otra trilateral ya está operando en ese pasillo, y no está permitido que dos máquinas ingresen al mismo carril. </div>
                     </div>
                 </div>
-
-                
-                   
-
-                <div class="solution-card">
-                    <div class="solution-header">
-                        <span class="solution-header-icon">📊</span>
-                        Recálculo de Contadores del Almacén (Desde MGA)Evitar que se acumulen reposiciones en pasillo y no dar faltas de servicio
-                    </div>
-
-                   <div class="solution-images full-width">
+            </div> <div class="solution-card">
+                <div class="solution-header">
+                    <span class="solution-header-icon">📊</span>
+                    Recálculo de Contadores del Almacén (Desde MGA) Evitar que se acumulen reposiciones en pasillo y no dar faltas de servicio
+                </div>
+                <div class="solution-images full-width">
                     <img src="https://raw.githubusercontent.com/grandebej-prog/iphone/refs/heads/main/reposicion.png" alt="Recalculo de contenedores.">
                 </div>
-
-                    <div class="solution-content">
-                        <p style="margin-bottom: 16px;">Pasos para forzar el recálculo de los contadores del almacén, útil tras incidencias de ubicación :</p>
-                        <ol class="solution-steps">
-                            <li class="solution-step">
-                                <p class="step-text"><strong>Paso 1:</strong> Abrir el **MGA**.</p>
-                            </li>
-                            <li class="solution-step">
-                                <p class="step-text"><strong>Paso 2:</strong> Seleccionar **Control**.</p>
-                            </li>
-                            <li class="solution-step">
-                                <p class="step-text"><strong>Paso 3:</strong> Seleccionar **Resolución de incidencias**.</p>
-                            </li>
-                            <li class="solution-step">
-                                <p class="step-text"><strong>Paso 4:</strong> Seleccionar **Menu de transitos y contenedores**.</p>
-                            </li>
-                            <li class="solution-step">
-                                <p class="step-text"><strong>Paso 5:</strong> Seleccionar **Recalcular contadores del almacen**.</p>
-                            </li>
-                            <li class="solution-step">
-                                <p class="step-text"><strong>Paso 6:</strong> Ir a la pestaña de **pantalla** para ver la información.</p>
-                            </li>
-                        </ol>
-                        <div class="success">
-                            <span class="success-icon">✅</span>
-                            <div class="success-text">Este proceso reajusta los datos de ubicación en el sistema y hara que se puedan acceder a los pasillos con resposiciones y faltas de pasillo estrecho que antes no lo permitia.</div>
-                        </div>
+                <div class="solution-content">
+                    <p style="margin-bottom: 16px;">Pasos para forzar el recálculo de los contadores del almacén, útil tras incidencias de ubicación :</p>
+                    <ol class="solution-steps">
+                        <li class="solution-step">
+                            <p class="step-text"><strong>Paso 1:</strong> Abrir el **MGA**.</p>
+                        </li>
+                        <li class="solution-step">
+                            <p class="step-text"><strong>Paso 2:</strong> Seleccionar **Control**.</p>
+                        </li>
+                        <li class="solution-step">
+                            <p class="step-text"><strong>Paso 3:</strong> Seleccionar **Resolución de incidencias**.</p>
+                        </li>
+                        <li class="solution-step">
+                            <p class="step-text"><strong>Paso 4:</strong> Seleccionar **Menu de transitos y contenedores**.</p>
+                        </li>
+                        <li class="solution-step">
+                            <p class="step-text"><strong>Paso 5:</strong> Seleccionar **Recalcular contadores del almacen**.</p>
+                        </li>
+                        <li class="solution-step">
+                            <p class="step-text"><strong>Paso 6:</strong> Ir a la pestaña de **pantalla** para ver la información.</p>
+                        </li>
+                    </ol>
+                    <div class="success">
+                        <span class="success-icon">✅</span>
+                        <div class="success-text">Este proceso reajusta los datos de ubicación en el sistema y hara que se puedan acceder a los pasillos con resposiciones y faltas de pasillo estrecho que antes no lo permitia.</div>
                     </div>
                 </div>
-                
-            </div> 
-        </div>
-
-        <div id="tablet-section" class="content-section" data-section-id="tablet">
+            </div> <div class="solution-card">
+                <div class="solution-header">
+                    <span class="solution-header-icon">🏷️</span>
+                    La etiqueta está mal codificada por el proveedor
+                </div>
+                <div class="solution-images full-width">
+                    <img src="https://raw.githubusercontent.com/grandebej-prog/iphone/refs/heads/main/malcodificada.png" alt="Mal codificada">
+                </div> 
+               
+                <div class="solution-content">
+                    <ol class="solution-steps">
+                        <li class="solution-step">
+                            <p class="step-text">Este mensaje aparece para avisar de que la etiqueta del proveedor está mal codificada y no es apta para la ubicación, pero sí para la recepción de la paleta. Para solucionarlo, habrá que pedirle al recepcionista que nos reimprima la etiqueta de forma manual.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div> </div> <div id="tablet-section" class="content-section" data-section-id="tablet">
             <button class="back-button">← Volver al Inicio</button>
             <h2 class="section-title">🖥️ Problemas con la Tablet y carretilla</h2>
             
@@ -939,7 +944,7 @@
     <footer>
         <div class="version-info">
             <p>Elaborado por: Equipo Fabricar frobledo</p>
-            <p>Versión: 1.2 | Fecha: Octubre 2025</p>
+            <p>Versión: 1.3 | Fecha: Noviembre 2025</p>
         </div>
     </footer>
     <script>
