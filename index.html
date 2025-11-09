@@ -727,7 +727,9 @@
                         <div class="warning-text">Para evitar el aviso de "pasillo saturado", la trilateral a la que le aparezca esta notificación debe salir al menú principal y solicitar una nueva asignación automática. Esto se debe a que la otra trilateral ya está operando en ese pasillo, y no está permitido que dos máquinas ingresen al mismo carril. </div>
                     </div>
                 </div>
-            </div> <div class="solution-card">
+            </div> 
+            
+            <div class="solution-card">
                 <div class="solution-header">
                     <span class="solution-header-icon">📊</span>
                     Recálculo de Contadores del Almacén (Desde MGA) Evitar que se acumulen reposiciones en pasillo y no dar faltas de servicio
@@ -762,7 +764,9 @@
                         <div class="success-text">Este proceso reajusta los datos de ubicación en el sistema y hara que se puedan acceder a los pasillos con resposiciones y faltas de pasillo estrecho que antes no lo permitia.</div>
                     </div>
                 </div>
-            </div> <div class="solution-card">
+            </div> 
+            
+            <div class="solution-card">
                 <div class="solution-header">
                     <span class="solution-header-icon">🏷️</span>
                     La etiqueta está mal codificada por el proveedor
@@ -778,7 +782,26 @@
                         </li>
                     </ol>
                 </div>
-            </div> </div> <div id="tablet-section" class="content-section" data-section-id="tablet">
+            </div> <div class="solution-card"> <div class="solution-header">
+                    <span class="solution-header-icon">❌</span>
+                    Problemas para la validación de la reposición
+                </div>
+                <div class="solution-images full-width">
+                    <img src="https://raw.githubusercontent.com/grandebej-prog/iphone/refs/heads/main/reponovalida.png" alt="Mensaje de error en pantalla sobre la validación incorrecta de una reposición.">
+                </div> 
+               
+                <div class="solution-content">
+    <ol class="solution-steps">
+        <li class="solution-step">
+            <p class="step-text" style="margin-bottom: 12px;">Este aviso surge porque el método de validación de la reposición del almacenaje no es el correcto. El sistema tiene asignados diferentes tipos de validación, como escanear (**pistolear**) la **paleta** o escanear la **ubicación** (dependiendo de la configuración del almacenaje).</p>
+            
+            <p class="step-text">Por lo tanto, el mensaje indica que se está intentando validar la reposición de manera errónea: se está escaneando un elemento (por ejemplo, la paleta) cuando la ubicación requiere que se escanee el otro (el almacenamiento o viceversa), según lo que tenga asignado en su configuración (**OCA**).</p>
+        </li>
+    </ol>
+    </div>
+            </div> </div> 
+        
+        <div id="tablet-section" class="content-section" data-section-id="tablet">
             <button class="back-button">← Volver al Inicio</button>
             <h2 class="section-title">🖥️ Problemas con la Tablet y carretilla</h2>
             
