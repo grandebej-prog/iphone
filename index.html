@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -95,6 +96,13 @@
             justify-content: center;
             align-items: center;
             height: 30px;
+        }
+        .menu-icon img {
+            max-width: 30px; 
+            max-height: 30px; 
+            width: auto;
+            height: auto;
+            object-fit: contain;
         }
         .menu-title {
             font-size: 1rem;
@@ -305,15 +313,6 @@
             font-size: 0.95rem;
             line-height: 1.4;
             width: 100%;
-        }
-        
-        /* ESTILO CORRECTO DEL ICONO DEL MENÚ */
-        .menu-icon img {
-            max-width: 30px; 
-            max-height: 30px; 
-            width: auto;
-            height: auto;
-            object-fit: contain;
         }
         
         /* Alineación de imágenes en soluciones */
@@ -646,9 +645,53 @@
                     </div>
                 </div>
             </div>
-        </div>
-        
-        <div id="location-section" class="content-section" data-section-id="location">
+            
+            <div class="solution-card">
+                <div class="solution-header">
+                    <span class="solution-header-icon">📦 </span>
+                    Error paleta sin Formato (MGPC125)
+                </div>
+                   <div class="solution-images full-width">
+                    <img src="https://raw.githubusercontent.com/grandebej-prog/iphone/refs/heads/main/sinformato.jpg" alt="error paleta sin formato.">
+                </div>
+                <div class="solution-content">
+                    <ol class="solution-steps">
+                        <li class="solution-step">
+                            <p class="step-text">Este error indica un problema en el formato de datos al procesar la paleta (código <strong>MGPC125</strong>). Debe ser cambiado atraves del MGA ya sea por organizador o la OCA.</p>
+                        </li>
+                        <li class="solution-step">
+                            <p class="step-text"><strong>Mantenimiento</strong>.</p>
+                        </li>
+                        <li class="solution-step">
+                            <p class="step-text"><strong>Maestros</strong> .</p>
+                        </li>
+                        <li class="solution-step">
+                            <p class="step-text"><strong>Articulos</strong> .</p>
+                        </li>
+                        <li class="solution-step">
+                            <p class="step-text">introducimos el numero del tornillo y le damos a buscar.</p>
+                        </li>
+                        <li class="solution-step">
+                            <p class="step-text"><strong>Picamos en el lapiz</strong>.</p>
+                        </li>
+                        <li class="solution-step">
+                            <p class="step-text"><strong>Le damos a formato</strong> .</p>
+                        </li>
+                        <li class="solution-step">
+                            <p class="step-text">Abajo en la casilla inferior izquierda observamos que en la casilla de formato no aparece nada .</p>
+                        </li>
+                        <li class="solution-step">
+                            <p class="step-text">Picamos la casilla y le indicamos el formarto correcto del tornillo.</p>
+                        </li>
+                        <li class="solution-step">
+                            <p class="step-text">Le damos a guardar .</p>
+                        </li>
+                    </ol>
+                         <div class="warning">
+                        <span class="warning-icon">⚠️</span>
+                        <div class="warning-text">Una vez solucionado el problema del formato de la paleta podemos continuar la preparación , le damos a aceptar y volvemos a la pantala para escanear el hueco , eliminandose el aviso del error .</div>
+                </div>
+            </div> </div> </div> <div id="location-section" class="content-section" data-section-id="location">
             <button class="back-button">← Volver al Inicio</button>
             <h2 class="section-title">
                 <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/carretillaicono.jpg" alt="Icono de carretilla">
@@ -669,7 +712,7 @@
                             <p class="step-text">El sistema indica que es un artículo nuevo sin ubicación.</p>
                         </li>
                         <li class="solution-step">
-                            <p class="step-text">Contacte inmediatamente con la OCA, para que le asigne una ubicación.</p>
+                            <p class="step-text">Contacte inmediatamente con la <strong>OCA</strong>, para que le asigne una ubicación.</p>
                         </li>
                         <li class="solution-step">
                             <p class="step-text">Continúe ubicando, hasta que un organizador o la OCA le confirme que el tornillo ya tiene un hueco asignado, para poder ubicarlo en altura.</p>
@@ -741,22 +784,22 @@
                     <p style="margin-bottom: 16px;">Pasos para forzar el recálculo de los contadores del almacén, útil tras incidencias de ubicación :</p>
                     <ol class="solution-steps">
                         <li class="solution-step">
-                            <p class="step-text"><strong>Paso 1:</strong> Abrir el **MGA**.</p>
+                            <p class="step-text"><strong>Paso 1:</strong> Abrir el <strong>MGA</strong>.</p>
                         </li>
                         <li class="solution-step">
-                            <p class="step-text"><strong>Paso 2:</strong> Seleccionar **Control**.</p>
+                            <p class="step-text"><strong>Paso 2:</strong> Seleccionar <strong>Control</strong>.</p>
                         </li>
                         <li class="solution-step">
-                            <p class="step-text"><strong>Paso 3:</strong> Seleccionar **Resolución de incidencias**.</p>
+                            <p class="step-text"><strong>Paso 3:</strong> Seleccionar <strong>Resolución de incidencias</strong>.</p>
                         </li>
                         <li class="solution-step">
-                            <p class="step-text"><strong>Paso 4:</strong> Seleccionar **Menu de transitos y contenedores**.</p>
+                            <p class="step-text"><strong>Paso 4:</strong> Seleccionar <strong>Menu de transitos y contenedores</strong>.</p>
                         </li>
                         <li class="solution-step">
-                            <p class="step-text"><strong>Paso 5:</strong> Seleccionar **Recalcular contadores del almacen**.</p>
+                            <p class="step-text"><strong>Paso 5:</strong> Seleccionar <strong>Recalcular contadores del almacen</strong>.</p>
                         </li>
                         <li class="solution-step">
-                            <p class="step-text"><strong>Paso 6:</strong> Ir a la pestaña de **pantalla** para ver la información.</p>
+                            <p class="step-text"><strong>Paso 6:</strong> Ir a la pestaña de <strong>pantalla</strong> para ver la información.</p>
                         </li>
                     </ol>
                     <div class="success">
@@ -782,7 +825,9 @@
                         </li>
                     </ol>
                 </div>
-            </div> <div class="solution-card"> <div class="solution-header">
+            </div>
+            <div class="solution-card"> 
+                <div class="solution-header">
                     <span class="solution-header-icon">❌</span>
                     Problemas para la validación de la reposición
                 </div>
@@ -791,15 +836,16 @@
                 </div> 
                
                 <div class="solution-content">
-    <ol class="solution-steps">
-        <li class="solution-step">
-            <p class="step-text" style="margin-bottom: 12px;">Este aviso surge porque el método de validación de la reposición del almacenaje no es el correcto. El sistema tiene asignados diferentes tipos de validación, como escanear (**pistolear**) la **paleta** o escanear la **ubicación** (dependiendo de la configuración del almacenaje).</p>
-            
-            <p class="step-text">Por lo tanto, el mensaje indica que se está intentando validar la reposición de manera errónea: se está escaneando un elemento (por ejemplo, la paleta) cuando la ubicación requiere que se escanee el otro (el almacenamiento o viceversa), según lo que tenga asignado en su configuración (**OCA**).</p>
-        </li>
-    </ol>
-    </div>
-            </div> </div> 
+                    <ol class="solution-steps">
+                        <li class="solution-step">
+                            <p class="step-text" style="margin-bottom: 12px;">Este aviso surge porque el método de validación de la reposición del almacenaje no es el correcto. El sistema tiene asignados diferentes tipos de validación, como escanear (<strong>pistolear</strong>) la <strong>paleta</strong> o escanear la <strong>ubicación</strong> (dependiendo de la configuración del almacenaje).</p>
+                            
+                            <p class="step-text">Por lo tanto, el mensaje indica que se está intentando validar la reposición de manera errónea: se está escaneando un elemento (por ejemplo, la paleta) cuando la ubicación requiere que se escanee el otro (el almacenamiento o viceversa), según lo que tenga asignado en su configuración (<strong>OCA</strong>).</p>
+                        </li>
+                    </ol>
+                </div>
+            </div> 
+        </div> 
         
         <div id="tablet-section" class="content-section" data-section-id="tablet">
             <button class="back-button">← Volver al Inicio</button>
@@ -875,13 +921,13 @@
                             <p class="step-text">Abra la aplicación <strong>MGA</strong> en el ordenador.</p>
                         </li>
                         <li class="solution-step">
-                            <p class="step-text">Seleccionar  **mantenimiento**.</p>
+                            <p class="step-text">Seleccionar  <strong>mantenimiento</strong>.</p>
                         </li>
                         <li class="solution-step">
-                            <p class="step-text"> Seleccionar **Maestros**.</p>
+                            <p class="step-text"> Seleccionar <strong>Maestros</strong>.</p>
                         </li>
                         <li class="solution-step">
-                            <p class="step-text"> Seleccionar **Terminales**.</p>
+                            <p class="step-text"> Seleccionar <strong>Terminales</strong>.</p>
                         </li>
                         <li class="solution-step">
                             <p class="step-text">Ingrese el número <strong>125</strong> (Tablet del rolldocking).</p>
@@ -890,13 +936,13 @@
                             <p class="step-text">Pulse el icono del <strong>lápiz</strong> (editar).</p>
                         </li>
                         <li class="solution-step">
-                            <p class="step-text">Seleccionar **Impresora de Etiquetados de Contenedor**.</p>
+                            <p class="step-text">Seleccionar <strong>Impresora de Etiquetados de Contenedor</strong>.</p>
                         </li>
                         <li class="solution-step">
-                            <p class="step-text">Busque y seleccione la impresora correcta que es **0914COEXPO60IT**.</p>
+                            <p class="step-text">Busque y seleccione la impresora correcta que es <strong>0914COEXPO60IT</strong>.</p>
                         </li>
                         <li class="solution-step">
-                            <p class="step-text"> Seleccionar **Guarde los cambios**.</p>
+                            <p class="step-text"> Seleccionar <strong>Guarde los cambios</strong>.</p>
                         </li>
                     </ol>
                     <div class="success">
@@ -921,35 +967,35 @@
                     <div class="cau-images-grid">
                         <div class="cau-image-item">
                             <div class="cau-image-wrapper">
-                                <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/cauimpresora.jpg" alt="Fallo de calibración de impresora térmica." style="object-fit: cover;">
+                                <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/cauimpresora.jpg" alt="Fallo de calibración de impresora térmica.">
                             </div>
                             <p class="cau-image-caption">Fallos de calibración de impresora.</p>
                         </div>
                         
                         <div class="cau-image-item">
                             <div class="cau-image-wrapper">
-                                <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/sincrocau.jpg" alt="Error de sincronización de sistema o servidor." style="object-fit: cover;">
+                                <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/sincrocau.jpg" alt="Error de sincronización de sistema o servidor.">
                             </div>
                             <p class="cau-image-caption">Errores de sincronización del sistema. Fallo en el almacenamiento de los servidores propios del Almacén.</p>
                         </div>
                         
                         <div class="cau-image-item">
                             <div class="cau-image-wrapper">
-                                <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/cauG04.jpg" alt="Pantalla de inicio de sesión de un software de gestión." style="object-fit: cover;">
+                                <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/cauG04.jpg" alt="Pantalla de inicio de sesión de un software de gestión.">
                             </div>
                             <p class="cau-image-caption">Errores críticos del sistema. Cualquier error que impida el funcionamiento normal.</p>
                         </div>
                         
                          <div class="cau-image-item">
                             <div class="cau-image-wrapper">
-                                <img src="https://raw.githubusercontent.com/grandebej-prog/iphone/refs/heads/main/preparador.png" alt="Pantalla de inicio de sesión de un software de gestión." style="object-fit: cover;">
+                                <img src="https://raw.githubusercontent.com/grandebej-prog/iphone/refs/heads/main/preparador.png" alt="Pantalla de inicio de sesión de un software de gestión.">
                             </div>
                             <p class="cau-image-caption">Errores de acceso al preparador porque un prepador tiene asignado mas de un nombre de usuario en el sistema.</p>
                         </div>
 
                         <div class="cau-image-item">
                             <div class="cau-image-wrapper">
-                                <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/cau%20app.png" alt="Aplicación de control para vehículos en una tablet." style="object-fit: cover;">
+                                <img src="https://raw.githubusercontent.com/grandebej-prog/Reingieneria/refs/heads/main/cau%20app.png" alt="Aplicación de control para vehículos en una tablet.">
                             </div>
                             <p class="cau-image-caption">Errores de funcionamiento de las App.</p>
                         </div>
@@ -967,7 +1013,7 @@
     <footer>
         <div class="version-info">
             <p>Elaborado por: Equipo Fabricar frobledo</p>
-            <p>Versión: 1.3 | Fecha: Noviembre 2025</p>
+            <p>Versión: 1.4 | Fecha: Diciembre 2025</p>
         </div>
     </footer>
     <script>
